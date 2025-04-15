@@ -36,24 +36,24 @@ const TeamMember = ({ name, role, imgSrc, bio, githubUrl }) => {
 const OurTeamPage = () => {
   const teamMembers = [
     {
-      name: "Alex Johnson",
+      name: "Utkarsh Verma",
       role: "Lead Developer",
       imgSrc: "/assests/team/utkarsh_verma.jpg",
-      bio: "Alex leads our development team with 8+ years of experience in web and app development. Specializes in React, Next.js and cloud architecture.",
+      bio: "Utkarsh is the mastermind behind ClipSync. With a passion for coding and a knack for problem-solving, he leads our development team to success.",
       githubUrl: "https://github.com/utkarshvermaofficial"
     },
     {
       name: "Aishna Gupta",
       role: "UI/UX Designer",
       imgSrc: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
-      bio: "Sarah creates beautiful user experiences with a keen eye for design. With background in psychology, she ensures our products are intuitive and accessible.",
+      bio: "Aishna is our creative genius. She designs intuitive and beautiful interfaces that enhance user experience. Her eye for detail ensures that every pixel matters.",
       githubUrl: "https://github.com/VanshRai7000"
     },
     {
       name: "Vansh Rai Chaudhary",
       role: "Backend Engineer",
       imgSrc: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
-      bio: "Michael handles our server infrastructure and database architecture. Expert in Node.js, MongoDB, and AWS services with focus on performance optimization.",
+      bio: "Vansh is the backbone of ClipSync. He ensures that our servers run smoothly and efficiently, handling all the data processing and storage needs.",
       githubUrl: "https://github.com/aishnagupta31"
     }
   ];
