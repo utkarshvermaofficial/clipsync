@@ -47,14 +47,14 @@ const OurTeamPage = () => {
       role: "UI/UX Designer",
       imgSrc: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
       bio: "Aishna is our creative genius. She designs intuitive and beautiful interfaces that enhance user experience. Her eye for detail ensures that every pixel matters.",
-      githubUrl: "https://github.com/VanshRai7000"
+      githubUrl: "https://github.com/aishnagupta31"
     },
     {
       name: "Vansh Rai Chaudhary",
       role: "Backend Engineer",
       imgSrc: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
       bio: "Vansh is the backbone of ClipSync. He ensures that our servers run smoothly and efficiently, handling all the data processing and storage needs.",
-      githubUrl: "https://github.com/aishnagupta31"
+      githubUrl: "https://github.com/VanshRai7000"
     }
   ];
 
