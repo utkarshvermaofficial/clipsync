@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ClipSync Editor</title>
+  <link rel="stylesheet" href="../css/editor.css">
+</head>
+
+<body>
+  <h2>🎞️ Collaborative Video Editor</h2>
+  <p>Room ID: <span id="room-display"></span></p>
+  <div id="event-log" style="border:1px solid #ccc; padding:5px; height:100px; overflow:auto;">
+      new user connected
+  </div>
+  
+  <input type="file" id="video-upload" accept="video/*" />
+  <video id="video-player" controls width="600"></video>
+
+  <div>
+    <button onclick="sendMarker()">Add Marker</button>
+    <ul id="marker-list"></ul>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="../js/room.js"></script>
+</body>
+
+</html>

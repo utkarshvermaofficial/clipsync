@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClipSync - Sync Your Clips Seamlessly</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <!-- <img src="../assets/images/logo.png" alt="ClipSync Logo" /> -->
+      <a href="/" class="logo">
+        <div class="logo-icon">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15 10L19.553 7.724C20.179 7.39 21 7.87565 21 8.618V15.382C21 16.1244 20.179 16.61 19.553 16.276L15 14M5 18H13C14.1046 18 15 17.1046 15 16V8C15 6.89543 14.1046 6 13 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <span class="logo-text">
+          Clip<span class="highlight">Sync</span>
+        </span>
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="feature.html">Features</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Our Team</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="login.html" class="btn-outline">Log In</a>
+      <a href="signup.html" class="btn-primary">Sign Up Free</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Sync Your Clips <span class="highlight">Seamlessly</span></h1>
+      <p>ClipSync makes it effortless to synchronize and share your clips across all your devices. Experience the
+        freedom of access everywhere, anytime.</p>
+      <div class="hero-buttons flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+        <a href="#"
+          class="px-8 py-3 bg-blue-600 text-white rounded-lg font-medium shadow-lg hover:bg-blue-700 transition transform hover:scale-105"
+          onclick="createProject()">
+          Start Project
+        </a>
+        <a href="#"
+          class="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-lg font-medium hover:bg-blue-50 transition transform hover:scale-105">
+          Learn More
+        </a>
+      </div>
+
+      <script>
+        async function createProject() {
+          const res = await fetch('/api/rooms/create', { method: 'POST' });
+          const data = await res.json();
+          console.log(data);
+          window.location.href = `/pages/editor.html?roomId=${data.roomId}`;
+        }
+      </script>
+
+      <div class="stats">
+        <div>
+          <h3>10K+</h3>
+          <p>Active Users</p>
+        </div>
+        <div>
+          <h3>99%</h3>
+          <p>Uptime</p>
+        </div>
+        <div>
+          <h3>4.9</h3>
+          <p>Star Rating</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="placeholder">
+        <p>Hero Image Placeholder</p>
+      </div>
+    </div>
+  </section>
+</body>
+
+<footer class="footer">
+  <div class="container">
+    <!-- Main Footer Content -->
+    <div class="footer-grid">
+      <!-- Column 1: Branding & Description -->
+      <div class="footer-branding">
+        <div class="logo">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15 10L19.553 7.724C20.179 7.39 21 7.87565 21 8.618V15.382C21 16.1244 20.179 16.61 19.553 16.276L15 14M5 18H13C14.1046 18 15 17.1046 15 16V8C15 6.89543 14.1046 6 13 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <h1 class="logo-text">Clip<span>Sync</span></h1>
+        </div>
+        <p class="description">
+          Collaborate with your team in real-time to create stunning videos directly in your browser.
+          No downloads required, just seamless creativity.
+        </p>
+        <div class="newsletter">
+          <h3>Stay Updated</h3>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+          </div>
+          <p class="small-text">Get the latest updates and offers. No spam.</p>
+        </div>
+      </div>
+
+      <!-- Column 2: Product Links -->
+      <div class="footer-links">
+        <h3>Product</h3>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Templates</a></li>
+          <li><a href="#">Release Notes</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Company Links -->
+      <div class="footer-links">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press Kit</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Support & Legal -->
+      <div class="footer-links">
+        <h3>Support & Legal</h3>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> ClipSync. All rights reserved.</p>
+
+      <div class="social-icons">
+        <a href="https://twitter.com" aria-label="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M8.29 20.251c7.547 0 11.675-6.155 11.675-11.495 0-.175 0-.349-.012-.522A8.18 8.18 0 0022 5.92a8.19 8.19 0 01-2.357.637 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.977 4.107 4.107 0 00-6.993 3.743A11.65 11.65 0 013 4.89a4.106 4.106 0 001.27 5.482 4.073 4.073 0 01-1.86-.513v.052a4.108 4.108 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+          </svg>
+        </a>
+        <a href="https://facebook.com" aria-label="Facebook">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@14.12.3/icons/facebook.svg" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" aria-label="Instagram">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@14.12.3/icons/instagram.svg" alt="Instagram">
+        </a>
+      </div>
+
+
+    </div>
+</footer>
+
+</html>
